@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require('path');
 
 // ! Data
-const data = JSON.parse(fs.readFileSync(path.resolve(__dirname, "data.json"), "utf-8"));
+const data = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data.json"), "utf-8"));
 const users = data.users;
 
 // ! Controllers
