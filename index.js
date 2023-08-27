@@ -22,7 +22,7 @@ async function main(){
 // ! Middlewares
 server.use(cors())
 server.use(express.json());
-server.use(express.static("build"));
+server.use(express.static(process.env.PUBLIC_DIR));
 
 // ? apply router to a new path that starts with /api and bind it with server using middleware
 
